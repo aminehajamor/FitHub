@@ -10,6 +10,8 @@ import Gyms from '../navigation/screens/Gym.js';
 import Bmi from '../navigation/screens/Bmi.js';
 import Register from '../components/register.js';
 import Login from '../components/login.js';
+import Restaurant from '../navigation/screens/Resturant.js';
+import Recipes from '../navigation/screens/Recipes.js';
 
 function GoToButton({ screenName }) {
     const navigation = useNavigation();
@@ -25,7 +27,6 @@ function GoToButton({ screenName }) {
   function SignupScreen({ navigation }) {
     return (
       <View >
-         
         <Login/>
       </View>
     );
@@ -76,7 +77,8 @@ function GoToButton({ screenName }) {
             <Stack.Screen name="Food" component={Food} />
             <Stack.Screen name="Gyms" component={Gyms} />
             <Stack.Screen name="Bmi" component={Bmi} />
-           
+            <Stack.Screen name="Restaurant" component={Restaurant} />
+            <Stack.Screen name="Recipes" component={Recipes} />
           </Stack.Navigator>
           
         </NavigationContainer>
