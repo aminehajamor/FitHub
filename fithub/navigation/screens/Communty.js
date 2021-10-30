@@ -1,7 +1,7 @@
 import * as React from "react";
 import { View, Text } from "react-native";
 
-export default Communty = ({ navigation }) => {
+const Communty = ({ navigation }) => {
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
       <Text
@@ -14,3 +14,4 @@ export default Communty = ({ navigation }) => {
   );
 };
  
+export default Communty;

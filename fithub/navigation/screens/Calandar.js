@@ -1,11 +1,11 @@
-import * as React from "react";
+import  React from "react";
 import { View, Text } from "react-native";
 
-export default Calandar = ({ navigation }) => {
+const Calandar = ({ navigation }) => {
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
       <Text
-        onPress={() => navigation.navigate('Home')}
+        onPress={() => navigation.navigate('Calandar')}
         style={{ fontSize: 26, fontWeight: "bold" }}
       >
         Calander Screnn
@@ -15,3 +15,4 @@ export default Calandar = ({ navigation }) => {
   );
 };
  
+export default Calandar;

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { View, Text } from "react-native";
 
-export default MyProfile    = ({ navigation }) => {
+const MyProfile    = ({ navigation }) => {
   return (
     <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
       <Text
@@ -13,4 +13,4 @@ export default MyProfile    = ({ navigation }) => {
     </View>
   );
 };
- 
+ export default MyProfile;

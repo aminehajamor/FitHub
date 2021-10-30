@@ -1,4 +1,4 @@
-import * as React from 'react';
+import  React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -6,14 +6,13 @@ import FitHub from '../routes/homeStack.js';
 import Calandar from './screens/Calandar.js';
 import Communty from './screens/Communty.js';
 import MyProfile from './screens/MyProfile.js';
-import Blogs from './screens/Blogs.js';
 const HomeP = "FiHub";
 const CalandarP = "Calandar";
 const CommuntyP = "Communty";
 const MyProfileP = "MyProfile";
 const Tab = createBottomTabNavigator()
  
-export default MainCount = () =>{
+const  MainCount = () =>{
     return (
         <NavigationContainer  independent={true} >
         <Tab.Navigator
@@ -56,3 +55,4 @@ export default MainCount = () =>{
        
     )
 }
+export default MainCount;
