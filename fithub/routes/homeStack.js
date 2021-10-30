@@ -70,7 +70,7 @@ function GoToButton({ screenName }) {
         <NavigationContainer style = { tw`grid grid-cols-3 divide-x divide-green-500`} independent={true}>
           <Stack.Navigator initialRouteName="Home" >
             <Stack.Screen name="Home" component={SignupScreen} /> 
-            <Stack.Screen name="HomeP" component={HomeScreen} />
+            <Stack.Screen name="LogIn" component={HomeScreen} />
             <Stack.Screen name="Coaches" component={Coaches} />
             <Stack.Screen name="Events" component={Events} />
             <Stack.Screen name="Food" component={Food} />

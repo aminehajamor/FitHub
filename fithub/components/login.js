@@ -51,7 +51,7 @@ export default function Login() {
 
           {/* <View style={{ width: 167, marginTop: 70, marginLeft: 73 }}> */}
           <View style={tw`  pt-4 w-4/5 ml-8`}>
-          <GoToButton screenName="HomeP"  title="Log In" color="#e7ff19"/>
+          <GoToButton screenName="LogIn"  title="Log In" color="#e7ff19"/>
           </View>
           <View style={tw`items-center`}>
             <Text style={tw`text-white items-center mt-8 `}>Or</Text>
