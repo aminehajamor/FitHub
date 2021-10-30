@@ -4,6 +4,19 @@ import { View, Image, Text, TextInput, Button, StyleSheet, ImageBackground } fro
 import tw from 'tailwind-react-native-classnames';
 // import { SocialIcon } from 'react-native-elements'
 // import back from '../assets/back.jpg'
+import { useNavigation, NavigationContainer } from '@react-navigation/native';
+
+
+function GoToButton({ screenName }) {
+  const navigation = useNavigation();
+
+  return (
+    <Button style={tw` flex:1 w-full h-full`}
+      title={` ${screenName}`} color='#36E08B'
+      onPress={() => navigation.navigate(screenName)}
+    />
+  );
+}
 export default function Login() {
   return (
     <View style={tw`w-full h-full`}>
@@ -38,10 +51,7 @@ export default function Login() {
 
           {/* <View style={{ width: 167, marginTop: 70, marginLeft: 73 }}> */}
           <View style={tw`  pt-4 w-4/5 ml-8`}>
-            <Button
-              title="Log In"
-              color="#e7ff19"
-              />
+          <GoToButton screenName="HomeP"  title="Log In" color="#e7ff19"/>
           </View>
           <View style={tw`items-center`}>
             <Text style={tw`text-white items-center mt-8 `}>Or</Text>

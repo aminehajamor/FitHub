@@ -9,30 +9,31 @@ import Food from '../navigation/screens/Food.js';
 import Gyms from '../navigation/screens/Gym.js';
 import Bmi from '../navigation/screens/Bmi.js';
 import Register from '../components/register.js';
+import Login from '../components/login.js';
 
 function GoToButton({ screenName }) {
     const navigation = useNavigation();
   
     return (
-      <Button
-        title={`Go ${screenName}`}
+      <Button style={tw` flex:1 w-full h-full`}
+        title={` ${screenName}`} color='#36E08B'
         onPress={() => navigation.navigate(screenName)}
       />
     );
   }
 
-  function HomeScreen({ navigation }) {
+  function SignupScreen({ navigation }) {
     return (
       <View >
-        <Register/>
-        <GoToButton screenName="Blogs" />
+         
+        <Login/>
       </View>
     );
   }
 
-  function BlogsScreen({ navigation }) {
+  function HomeScreen({ navigation }) {
     return (
-     <View style={tw`w-full h-full flex flex-row ml-24 mt-24`}> 
+     <View style={tw`w-full h-full flex flex-row `}> 
       <View >
           <View style = {{width:100 , height:100}}>
           <Image source={require('../assets/Icons/calandar.png')} style = {{width:70 , height:70}} />
@@ -68,8 +69,8 @@ function GoToButton({ screenName }) {
     return (
         <NavigationContainer style = { tw`grid grid-cols-3 divide-x divide-green-500`} independent={true}>
           <Stack.Navigator initialRouteName="Home" >
-            {/* <Stack.Screen name="Home" component={HomeScreen} />  */}
-            <Stack.Screen name="Blogs" component={BlogsScreen} />
+            <Stack.Screen name="Home" component={SignupScreen} /> 
+            <Stack.Screen name="HomeP" component={HomeScreen} />
             <Stack.Screen name="Coaches" component={Coaches} />
             <Stack.Screen name="Events" component={Events} />
             <Stack.Screen name="Food" component={Food} />
